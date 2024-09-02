@@ -1,0 +1,239 @@
+<html><head><base href="https://seba.fun/u/test">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>test | seba.fun</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-color: #3a3a3a;
+    --secondary-color: #666666;
+    --background-color: #121212;
+    --card-background: #1e1e1e;
+    --text-color: #e0e0e0;
+    --border-color: #2c2c2c;
+    --accent-color: #4a4a4a;
+    --verified-color: #4CAF50;
+
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+  .profile {
+    background-color: var(--card-background);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 20px;
+  }
+  h1, h2 {
+    margin: 0 0 15px 0;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  .username {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  .verified-badge {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    fill: var(--verified-color);
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-value {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  .posts {
+    background-color: var(--card-background);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .post {
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+  }
+  .post:last-child {
+    border-bottom: none;
+  }
+  .post-content {
+    margin-bottom: 15px;
+  }
+  .post-meta {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    font-weight: 300;
+  }
+  .post-actions {
+    display: flex;
+    gap: 15px;
+  }
+  .action-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  .action-button:hover {
+    background-color: var(--accent-color);
+  }
+  .action-button svg {
+    margin-right: 5px;
+  }
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: var(--text-color);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <aside class="profile">
+      <img src="https://github.com/sebasprb/sebasprb.github.io/blob/main/profile.jpeg?raw=true" alt="test's profile picture" class="profile-pic" width="120" height="120">
+      <h1>test</h1>
+      <p class="username">
+        @test
+        <svg class="verified-badge" viewBox="0 0 24 24">
+          <path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"/>
+        </svg>
+      </p>
+      <p>test profile w00t w00t</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div>Posts</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">7</div>
+          <div>Followers</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div>Following</div>
+        </div>
+      </div>
+    </aside>
+    
+    <main class="posts">
+      <h2>Posts</h2>
+      <div class="post">
+        <div class="post-content">
+          <p>just pushed a change on github: <a href="https://github.com/sebasprb">seba.link/github5</a> #test #hashtag</p>
+        </div>
+        <div class="post-meta">2 hours ago</div>
+        <div class="post-actions">
+          <button class="action-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            42
+          </button>
+          <button class="action-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"/>
+            </svg>
+            12
+          </button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-content">
+          <p>from mobile :3 hello world</p>
+        </div>
+        <div class="post-meta">1 day ago</div>
+        <div class="post-actions">
+          <button class="action-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            156
+          </button>
+          <button class="action-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"/>
+            </svg>
+            34
+          </button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-content">
+          <p>first</p>
+        </div>
+        <div class="post-meta">3 days ago</div>
+        <div class="post-actions">
+          <button class="action-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            2.8M
+          </button>
+          <button class="action-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"/>
+            </svg>
+            76.3K
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const actionButtons = document.querySelectorAll('.action-button');
+      actionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const currentCount = parseInt(this.textContent.trim());
+          this.textContent = currentCount + 1;
+          this.style.backgroundColor = '#4a4a4a';
+          setTimeout(() => {
+            this.style.backgroundColor = 'transparent';
+          }, 300);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
